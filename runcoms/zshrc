@@ -15,7 +15,7 @@ unsetopt CORRECT
 
 # Aliases
 alias lockme="i3lock -uti ~/Downloads/d5c.png -c ffff00"
-alias updateme="cd ~/.zprezto/ && git pull && git submodule update --init --recursive && cd - && sudo pacman -Syu"
+alias updateme="cd ~/.zprezto/ && git pull && git submodule update --init --recursive && cd - && yaourt -Syu --devel --aur"
 alias bright="sudo tee /sys/class/backlight/intel_backlight/brightness <<< "
 
 webm() {
