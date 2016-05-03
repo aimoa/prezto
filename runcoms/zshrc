@@ -14,9 +14,10 @@ fi
 unsetopt CORRECT
 
 # Aliases
-alias lockme="i3lock -uti ~/Downloads/d5c.png -c ffff00"
-alias updateme="cd ~/.zprezto/ && git pull && git submodule update --init --recursive && cd - && yaourt -Syu --devel --aur"
 alias bright="sudo tee /sys/class/backlight/intel_backlight/brightness <<< "
+alias lockme="i3lock -ui ~/lock.png -p win"
+alias py="python2"
+alias updateme="cd ~/.zprezto/ && git pull upstream master && git submodule update --init --recursive && cd - && yaourt -Syu --devel --aur"
 
 webm() {
     ffmpeg -ss $(($2 - 10)) -i $1 -threads 0 -ss 10 -to $(($3 - $2 + 10)) -c:v libvpx -b:v 40M -an "$2$3".webm
